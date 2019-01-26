@@ -10,6 +10,10 @@ import Foundation
 struct TipoEmpresas : Codable{
     var id : Int
     var nome : String
+    init(id: Int, nome: String) {
+        self.nome = nome
+        self.id = id
+    }
     enum CodingKeys : String, CodingKey {
         case id
         case nome = "enterprise_type_name"

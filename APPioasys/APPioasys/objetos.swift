@@ -20,6 +20,13 @@ struct Empresas : Codable{
         case country
         case tipo = "enterprise_type"
     }
+    init(nome: String, descricao: String, imagem: String, country: String, tipo: TipoEmpresas) {
+        self.nome = nome
+        self.descricao = descricao
+        self.imagem = imagem
+        self.country = country
+        self.tipo = tipo
+    }
 }
 struct rapper : Codable{
     var arrayEmpresas : [Empresas]

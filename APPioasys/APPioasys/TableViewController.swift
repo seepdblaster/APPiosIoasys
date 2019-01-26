@@ -16,7 +16,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return 1
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var celula = tableView.dequeueReusableCell(withIdentifier: "InfoStoryBoard") as? TableCells
+        var celula = tableView.dequeueReusableCell(withIdentifier: "6") as? TableCells
         celula?.labelNomeEmpresa.text = listaEmpresas?[indexPath.row].nome
         celula?.labelTipoEmpresa.text = listaEmpresas?[indexPath.row].tipo.nome
         celula?.labelCidadeEmpresa.text = listaEmpresas?[indexPath.row].country
@@ -24,7 +24,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyBoard.instantiateViewController(withIdentifier: "6") as? InfoEmpresasViewController
+        let viewController = storyBoard.instantiateViewController(withIdentifier: "InfoStoryBoard") as? InfoEmpresasViewController
         viewController?.infoEmpresas = listaEmpresas?[indexPath.row]
         self.navigationController?.pushViewController(viewController!, animated: true)
 
@@ -32,7 +32,7 @@ class TableViewController: UIViewController, UITableViewDelegate, UITableViewDat
     
     @IBOutlet weak var lista : UITableView!
     
-    var listaEmpresas : [Empresas]?
+    var listaEmpresas : [Empresas]? = [Empresas(nome: "empresa1", descricao: "kjhasdgfasdkj", imagem: "", country: "fkashjdfasd", tipo: TipoEmpresas(id: 33, nome: "empresa1"))]
     override func viewDidLoad() {
         super.viewDidLoad()
         lista.delegate = self

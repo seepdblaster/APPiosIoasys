@@ -1,0 +1,6 @@
+framework module Pods_APPioasysTests {
+  umbrella header "Pods-APPioasysTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

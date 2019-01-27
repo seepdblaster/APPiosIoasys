@@ -8,11 +8,12 @@
 
 import Foundation
 struct Empresas : Codable{
-    var nome : String
-    var descricao : String
-    var imagem : String
-    var country : String
+    var nome : String?
+    var descricao : String?
+    var imagem : String?
+    var country : String?
     var tipo : TipoEmpresas
+    
     enum CodingKeys : String, CodingKey{
         case nome = "enterprise_name"
         case descricao = "description"
@@ -30,6 +31,7 @@ struct Empresas : Codable{
 }
 struct rapper : Codable{
     var arrayEmpresas : [Empresas]
+    
     enum CodingKeys : String, CodingKey{
         case arrayEmpresas = "enterprises"
     }

@@ -10,8 +10,8 @@
 		1502132721F922AC00D6E050 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502132621F922AC00D6E050 /* TableViewController.swift */; };
 		1502132A21F934C600D6E050 /* TableCells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1502132921F934C600D6E050 /* TableCells.swift */; };
 		1503A3E621FA3D9900259293 /* InfoEmpresasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1503A3E521FA3D9900259293 /* InfoEmpresasViewController.swift */; };
-		1505025B21F7DB1F0017DA18 /* Objetos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505025A21F7DB1E0017DA18 /* Objetos.swift */; };
-		1505025E21F7DEF70017DA18 /* TipoEmpresas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505025D21F7DEF70017DA18 /* TipoEmpresas.swift */; };
+		1505025B21F7DB1F0017DA18 /* objetos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505025A21F7DB1E0017DA18 /* objetos.swift */; };
+		1505025E21F7DEF70017DA18 /* tipoEmpresas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1505025D21F7DEF70017DA18 /* tipoEmpresas.swift */; };
 		15F8C08621F7B9C900231E21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8C08521F7B9C900231E21 /* AppDelegate.swift */; };
 		15F8C08821F7B9C900231E21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8C08721F7B9C900231E21 /* ViewController.swift */; };
 		15F8C08B21F7B9C900231E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15F8C08921F7B9C900231E21 /* Main.storyboard */; };
@@ -46,8 +46,8 @@
 		1502132621F922AC00D6E050 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1502132921F934C600D6E050 /* TableCells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCells.swift; sourceTree = "<group>"; };
 		1503A3E521FA3D9900259293 /* InfoEmpresasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoEmpresasViewController.swift; sourceTree = "<group>"; };
-		1505025A21F7DB1E0017DA18 /* Objetos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Objetos.swift; sourceTree = "<group>"; };
-		1505025D21F7DEF70017DA18 /* TipoEmpresas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipoEmpresas.swift; sourceTree = "<group>"; };
+		1505025A21F7DB1E0017DA18 /* objetos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = objetos.swift; sourceTree = "<group>"; };
+		1505025D21F7DEF70017DA18 /* tipoEmpresas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tipoEmpresas.swift; sourceTree = "<group>"; };
 		15F8C08221F7B9C900231E21 /* APPioasys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APPioasys.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15F8C08521F7B9C900231E21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15F8C08721F7B9C900231E21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -133,8 +133,8 @@
 				15F8C08E21F7B9CC00231E21 /* LaunchScreen.storyboard */,
 				15F8C09121F7B9CC00231E21 /* Info.plist */,
 				15F8C0B321F7C34000231E21 /* LoginViewController.swift */,
-				1505025A21F7DB1E0017DA18 /* Objetos.swift */,
-				1505025D21F7DEF70017DA18 /* TipoEmpresas.swift */,
+				1505025A21F7DB1E0017DA18 /* objetos.swift */,
+				1505025D21F7DEF70017DA18 /* tipoEmpresas.swift */,
 				1502132621F922AC00D6E050 /* TableViewController.swift */,
 				1502132921F934C600D6E050 /* TableCells.swift */,
 				1503A3E521FA3D9900259293 /* InfoEmpresasViewController.swift */,
@@ -412,11 +412,11 @@
 				15F8C0B421F7C34000231E21 /* LoginViewController.swift in Sources */,
 				1502132721F922AC00D6E050 /* TableViewController.swift in Sources */,
 				15F8C08821F7B9C900231E21 /* ViewController.swift in Sources */,
-				1505025B21F7DB1F0017DA18 /* Objetos.swift in Sources */,
+				1505025B21F7DB1F0017DA18 /* objetos.swift in Sources */,
 				1503A3E621FA3D9900259293 /* InfoEmpresasViewController.swift in Sources */,
 				15F8C08621F7B9C900231E21 /* AppDelegate.swift in Sources */,
 				1502132A21F934C600D6E050 /* TableCells.swift in Sources */,
-				1505025E21F7DEF70017DA18 /* TipoEmpresas.swift in Sources */,
+				1505025E21F7DEF70017DA18 /* tipoEmpresas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

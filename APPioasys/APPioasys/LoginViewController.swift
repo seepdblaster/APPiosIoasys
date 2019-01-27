@@ -26,11 +26,12 @@ class LoginViewController: UIViewController {
                 UserDefaults.standard.set(id, forKey: "id")
                 var client = headers?["client"] as! String
                 UserDefaults.standard.set(client, forKey: "client")
-                Alamofire.request("http://empresas.ioasys.com.br/api/v1/enterprises", method: .get  	, parameters: [:], encoding: JSONEncoding.default, headers: ["Content-Type": "application/json", "uid": id, "access-token": tokens, "client": client]).responseData(completionHandler: { (empresasResponse) in
+                Alamofire.request("http://empresas.ioasys.com.br/api/v1/enterprises", method: .get, parameters: nil, encoding: JSONEncoding.default, headers: ["Content-Type": "application/json", "uid": id, "access-token": tokens, "client": client]).responseData(completionHandler: { (empresasResponse) in
                     guard let empresas = try?JSONDecoder().decode(rapper.self, from: empresasResponse.data!) else { return }
                     let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-                    let viewController = storyBoard.instantiateViewController(withIdentifier: "33") as? TableViewController
-                    viewController?.listaEmpresas = empresas.arrayEmpresas
+                    let viewController = storyBoard.instantiateViewController(withIdentifier: "3") as? UINavigationController
+                    let tableViewController = viewController?.viewControllers[0] as? TableViewController
+                    tableViewController?.listaEmpresas = empresas.arrayEmpresas
                     self.present(viewController!, animated: true, completion: nil)
                     
                 })
